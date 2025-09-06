@@ -43,9 +43,11 @@ Formas de otimizar os recursos com as instâncias EC2:
 
 → Escalar recursos → aumentar ou diminuir os recursos de acordo com as necessidades
   Podendo ser: 
+  
     - Verticalmente:
       - aumentar ou diminuir o poder computacional da nossa instância esxistente (apenas uma máquina)
       - geralmente relacionado ao número de vCPUS, memória, armazenamento, rede
+      
     - Orizontalmente:      
       - aumentae ou diminuir o número de instâncias, duplicando ou retirando a nossa instância existente (mais de uma máquina)
       
