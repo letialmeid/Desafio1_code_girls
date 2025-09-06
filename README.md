@@ -33,6 +33,8 @@ O EC2(Elastic Compute Cloud) oferece a possibilidade de criar instâncias(Máqui
 
 Existem diversas instâncias que a AWS disponibiliza com diferentes características e capacidades para diferentes tipos de uso, como: Uso geral, Memória otimizada, Armazenamento otimizado, Computação otimizada e Computação acelerada. Também existem as famílias das instâncias, onde elas são agrupadas de acordo como os seus tipos. Obs: As instâncias sempre podem sofrer downgrade ou upgrade de acordo com o que o seu negócio precisa. Então, escolher a instância certa é sobre entender as necessidades da sua aplicação e utilizar os recursos da nuvem com inteligência, alcançando eficiência e economia de custos. 
 
+Pensando em um cenário onde é necesspario a criação de várias instâncias EC2, não é viável ficar criando e configurando uma por vez. Dado isso, o AMI (Amazon Machine Image) gera uma imagem da máquina virtual pré-configurada, com  as informações necessárias para iniciar quantas instâncias quiser com as mesmas configurações. Obs: essas imagens podem ser geradas a partir de instâncias em execução, pegando suas configurações mais atualizadas ou quando estão paradas.
+
 # Otimização de custos
 Como o preço da AWS é em dólar, algo que gostei de aprender foi que a AWS oferece uma ferramenta (AWS Princing Calculator) para calcular e simular os preços de seus serviços antes de usa-los em algum projeto. É bem simples de usar, é só selecionar o serviço que pretende utilizar, preencher a forma que pretende fazer isso e olhar o resumo com o preço anual e mensal. Eu particularmente gostei bastante para entender quanto custaria aplicar meus conhecimentos na própria plataforma e ter um projeto pessoal pra apresentar.
 
@@ -47,7 +49,8 @@ Podendo ser:
     - aumentar ou diminuir o poder computacional da nossa instância esxistente (apenas uma máquina)
     - geralmente relacionado ao número de vCPUS, memória, armazenamento, rede     
 - Orizontalmente:      
-  - aumentae ou diminuir o número de instâncias, duplicando ou retirando a nossa instância existente (mais de uma máquina)
+  - aumentar ou diminuir o número de instâncias, duplicando ou retirando a nossa instância existente (mais de uma máquina)
+  - as máquinas são duplicadas
       
 → Instância Sob demanda → são recomendadas para aplicativos com cargas de trabalho irregulares de curto prazo que não podem ser interrompidas
   - elas são compradas a uma taxa fixa e paga por hora
@@ -58,7 +61,12 @@ Podendo ser:
 → Instância SPOT → garante disponibilidade sob demanda com descontos ate 90% PORÉM a AWS pode encerrar sua instância a qualquer momento com aviso prévio de 2 minutos
 
 
+# Armazenamento na Nuvem
 
+# Amazon EBS (Elastic Block Store)
+O Amazon EBS é um serviço de armazenamento em blocos da AWS, usado junto com instâncias do Amazon EC2. Toda máquina vem com uma partição para armazenar o sistema operacional e caso necessário pode se adicionar o EBS para novos armazenamentos. Ele é visto como um HD externo que pode ter qualquer tamanho e ser escalado ao infinito. Ele armazena dados persistentes, ou seja, os dados continuam existindo mesmo que você desligue ou reinicie a instância.
 
+É possível fazer transferência de dados entre dois EBS (de duas máquinas EC2 ou na mesma region) usando um snapshot (cópias de segurança). O snapshot é configurado para tirar ‘fotos’ dos volumes EBS anexados a EC2 periodicamente para fazer backups e salva essas cópias no S3.
 
-
+# Amazon S3 (Simple Storage Service)
+O S3 é um serviço de armazenamento de objetos na nuvem, que pode armazenar arquivos de diferentes formas (imagens, vídeos, backups, logs, datasets etc). Além da armazenação de dados, ele é mega utilizado para a movimentação de arquivos e distribuição dó conteúdo, porque ele interage com diversos outros serviços dentro da plataforma. Uma das principais características do S3 é que ele tem altíssima dispinibilidade, com valor de 99,999999999% (11 9’s).
