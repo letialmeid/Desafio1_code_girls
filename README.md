@@ -1,5 +1,5 @@
 # Desafio 1 Code Girls
-Esse repositório tem como objetivo organizar o aprendizado do módulo 1 e do módulo 2 do curso Code Girls - AWS 
+Esse repositório tem como objetivo organizar o aprendizado do módulo 1 e do módulo 2 do curso Santander Code Girls - AWS 
 
 # Módulo 1: Introdução à AWS e ao Universo da Computação em Nuvem
 
