@@ -26,8 +26,36 @@ Como a AWS apenas cobra pelo seu uso, é interessante a partir do momento em que
 Existem 3 principais formas de acessarmos a AWS:
 - A principal e mais famosa é pela interface acessando o site pela web, onde temos a facilidade de navegação e recursos visuais.
 - Dentro da interface web, existe a possibilidade de acessar os recursos pelo AWS ClouShell que é semelhante a um prompt de comando
-- Por fim, temo o AWS CLI, que é o acesso por linha de comando, que rejeita a necessidade de abrir a interface. Nesse caso, conseguimos acessar os recursos da AWS instalando o AWS CLI pelo site oficial em conjunto com o Git Bash. Obs: para funcionar o acesso, é necessário criar uma chave de acesso no IAM 
+- Por fim, temos o AWS CLI, que é o acesso por linha de comando, que rejeita a necessidade de abrir a interface. Nesse caso, conseguimos acessar os recursos da AWS instalando o AWS CLI pelo site oficial em conjunto com o Git Bash. Obs: para funcionar o acesso, é necessário criar uma chave de acesso no IAM 
 
+# Módulo 2: Computação na Nuvem com EC2
+O EC2(Elastic Compute Cloud) oferece a possibilidade de criar instâncias(Máquinas Virtuais) sem preocupações com infraestruturas. O cliente deve decidir qual o sistema operacional da máquina e faz o restante das configurações de sistema. Elas podem ser instâncias isoladas, sendo um recurso totalmente próprio ou compartilhadas com outros clientes da cloud.
+
+Existem diversas instâncias que a AWS disponibiliza com diferentes características e capacidades para diferentes tipos de uso, como: Uso geral, Memória otimizada, Armazenamento otimizado, Computação otimizada e Computação acelerada. Também existem as famílias das instâncias, onde elas são agrupadas de acordo como os seus tipos. Obs: As instâncias sempre podem sofrer downgrade ou upgrade de acordo com o que o seu negócio precisa. Então, escolher a instância certa é sobre entender as necessidades da sua aplicação e utilizar os recursos da nuvem com inteligência, alcançando eficiência e economia de custos. 
+
+# Otimização de custos
+Como o preço da AWS é em dólar, algo que gostei de aprender foi que a AWS oferece uma ferramenta (AWS Princing Calculator) para calcular e simular os preços de seus serviços antes de usa-los em algum projeto. É bem simples de usar, é só selecionar o serviço que pretende utilizar, preencher a forma que pretende fazer isso e olhar o resumo com o preço anual e mensal. Eu particularmente gostei bastante para entender quanto custaria aplicar meus conhecimentos na própria plataforma e ter um projeto pessoal pra apresentar.
+
+Formas de otimizar os recursos com as instâncias EC2:
+- Desligando as instâncias não utilizadas → uma menor utilização implica diretamente em economia de custos
+
+- Removendo recursos ociosos ou não utilizados → se não está mais utilizando uma instância específica o melhor é remove-la
+
+→ Escalar recursos → aumentar ou diminuir os recursos de acordo com as necessidades
+  Podendo ser: 
+    - Verticalmente:
+      - aumentar ou diminuir o poder computacional da nossa instância esxistente (apenas uma máquina)
+      - geralmente relacionado ao número de vCPUS, memória, armazenamento, rede
+    - Orizontalmente:      
+      - aumentae ou diminuir o número de instâncias, duplicando ou retirando a nossa instância existente (mais de uma máquina)
+      
+→ Instância Sob demanda → são recomendadas para aplicativos com cargas de trabalho irregulares de curto prazo que não podem ser interrompidas
+  - elas são compradas a uma taxa fixa e paga por hora
+
+→ Instância Reservada → mais baratas que a sob demanda, mas fica preso por um preço anual
+  - é uma desvantagem pra quem não precisa do serviço o ano todo
+
+→ Instância SPOT → garante disponibilidade sob demanda com descontos ate 90% PORÉM a AWS pode encerrar sua instância a qualquer momento com aviso prévio de 2 minutos
 
 
 
