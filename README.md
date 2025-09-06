@@ -20,7 +20,7 @@ Após a criação da conta na AWS, a primeira boa prática que deve ser feita é
 
 O IAM é o serviço da AWS responsável por gerenciar usuários e grupos da cloud. Através dele o adminitrador atribui as políticas aos grupos de usuários e gerencia o que cada um pode ou não fazer dentro da AWS. Então, pensando no contexto de uma organização, os funcionários só tem acessos a serviços dentro do seu escopo de atividade, partindo do princípio do minimo privilégio.
 
-Como a AWS apenas cobra pelo seu uso, é interessante a partir do momento em que começar a navergar por ela, configurar alertas de custos no serviço de gerenciamento de cobranças e custos para estabelecer um limite de recursos e poder receber notificações em seu e-mail para quando esse limite estiver perto de ser ultrapassado.
+Como a AWS apenas cobra pelo seu uso, é interessante a partir do momento em que começar a navergar por ela, configurar alertas de custos no serviço de gerenciamento de cobranças e custos dentro da plataforma, para estabelecer um limite de recursos que esteja disposto a gastar e receber notificações em seu e-mail para quando esse limite estiver perto de ser ultrapassado.
 
 # Formas de acessar AWS
 Existem 3 principais formas de acessarmos a AWS:
