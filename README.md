@@ -43,22 +43,22 @@ Formas de otimizar os recursos com as instâncias EC2:
 
 - Removendo recursos ociosos ou não utilizados → se não está mais utilizando uma instância específica o melhor é remove-la
 
-→ Escalar recursos → aumentar ou diminuir os recursos de acordo com as necessidades
+- Escalando recursos → aumentar ou diminuir os recursos de acordo com as necessidades
 Podendo ser: 
-- Verticalmente:
-    - aumentar ou diminuir o poder computacional da nossa instância esxistente (apenas uma máquina)
-    - geralmente relacionado ao número de vCPUS, memória, armazenamento, rede     
-- Orizontalmente:      
-  - aumentar ou diminuir o número de instâncias, duplicando ou retirando a nossa instância existente (mais de uma máquina)
-  - as máquinas são duplicadas
+    - Verticalmente:
+        - aumentar ou diminuir o poder computacional da nossa instância esxistente (apenas uma máquina)
+        - geralmente relacionado ao número de vCPUS, memória, armazenamento, rede     
+    - Orizontalmente:      
+      - aumentar ou diminuir o número de instâncias, duplicando ou retirando a nossa instância existente (mais de uma máquina)
+      - as máquinas são duplicadas
       
-→ Instância Sob demanda → são recomendadas para aplicativos com cargas de trabalho irregulares de curto prazo que não podem ser interrompidas
+- Usando Instância Sob demanda → são recomendadas para aplicativos com cargas de trabalho irregulares de curto prazo que não podem ser interrompidas
   - elas são compradas a uma taxa fixa e paga por hora
 
-→ Instância Reservada → mais baratas que a sob demanda, mas fica preso por um preço anual
+- Usando Instância Reservada → mais baratas que a sob demanda, mas fica preso por um preço anual
   - é uma desvantagem pra quem não precisa do serviço o ano todo
 
-→ Instância SPOT → garante disponibilidade sob demanda com descontos ate 90% PORÉM a AWS pode encerrar sua instância a qualquer momento com aviso prévio de 2 minutos
+- Usando Instância SPOT → garante disponibilidade sob demanda com descontos ate 90% PORÉM a AWS pode encerrar sua instância a qualquer momento com aviso prévio de 2 minutos
 
 
 # Armazenamento na Nuvem
